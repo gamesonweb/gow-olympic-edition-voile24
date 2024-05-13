@@ -1,8 +1,9 @@
-# gow-olympic-edition-voile24
-Nom : Voile 24
-
-Membres : Bassem ABDELHEDI, Brahim AHMAT SOUGOUDI
-
-Description : Notre jeu se base sur l’épreuve de la voile des Jeux olympiques. Le voilier du joueur 
-doit effectuer le circuit le plus rapidement possible. C’est donc une course contre la 
-montre. 
+<h1>Voile24</h1>
+<p>Voile24 est un jeux de voile creer avec BabyloneJS</p>
+<br>
+<br>
+<p>Pour initialiser le jeu vous de devez : </p>
+<ul>
+  <li>npm install</li>
+  <li>npm start </li>
+</ul>
