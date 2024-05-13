@@ -5,4 +5,8 @@ Membres : Bassem ABDELHEDI, Brahim AHMAT SOUGOUDI
 
 Description : Notre jeu se base sur l’épreuve de la voile des Jeux olympiques. Le voilier du joueur 
 doit effectuer le circuit le plus rapidement possible. C’est donc une course contre la 
-montre. 
+montre.
+
+Lien pour jouer au jeu : https://goldenbrask.github.io/Voile24/
+
+Lien vidéo gameplay : https://www.youtube.com/watch?v=ct-R8Fw1im4
