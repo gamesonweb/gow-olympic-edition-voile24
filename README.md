@@ -1,2 +1,4 @@
 # gow-olympic-edition-voile24
-gow-olympic-edition-voile24 created by GitHub Classroom
+Nom : Voile 24
+
+Membres : Bassem ABDELHEDI, Brahim AHMAT SOUGOUDI
