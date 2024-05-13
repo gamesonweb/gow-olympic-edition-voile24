@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Voile24</title>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <div id="gui">
+    <img id="backgroundImage">
+
+    <div id="menu">
+
+      <div id="buttonContainer">
+        <button id="playButton" class="menuButton">PLAY</button>
+        <!-- <button id="controlsButton" class="menuButton">CONTROLS</button>
+        <button id="creditsButton" class="menuButton">CREDITS</button> -->
+      </div>
+
+    </div>
+
+    <div id="choicesUser">
+
+      <div id="weather" class="settingSection">
+        <span class="titleSection">Weather</span>
+        <div class="choice">
+          <button id="sunny" class="settingMapButton">☀️</button>
+          <button id="rainy" class="settingMapButton">🌧️</button>
+        </div>
+      </div>
+
+      <div id="circuit" class="settingSection">
+        <span class="titleSection">Circuit</span>
+        <div class="choice">
+          <button id="circuit1" class="settingMapButton">1</button>
+          <button id="circuit2" class="settingMapButton">2</button>
+        </div>
+      </div>
+
+      <button id="buttonGo" class="settingMapButton">GO !</button>
+
+    </div>
+  </div>
+
+  <div id="playerinfo">
+    <div id="chronoInfo">
+      Félicitations ! Vous avez terminé le circuit en <span id="chrono"></span> secondes.
+    </div>
+    <div>
+      <button id="restartButton" class="menuButton">Menu</button>
+    </div>
+  </div>
+
+
+  <div id="loader">
+    <div id="loadingContainer">
+      <img src="../assets/images/logo.png" alt="" id="logo">
+      <div id="loadingBar"></div>
+    </div>
+    <p>Chargement</p>
+  </div>
+  <canvas id="renderCanvas" touch-action="none"></canvas>
+  <div id="fps" >0</div>
+  <div id="timeContainer">
+    Temps écoulé 
+    <div id="time">
+    </div>
+  </div>
+  <div id="countDownContainer">
+    <div id="countDown"></div>
+  </div>
+  <div id="messageContainer">
+    <p class="message">Appuyez sur la barre "Espace" pour commencer la partie</p>
+  </div>
+</body>
+
+</html>

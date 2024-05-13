@@ -1,0 +1,293 @@
+html,
+body {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+
+#buttonContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menuButton {
+  background-color: #4c7aafd6;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Calibri, sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 200px;
+
+}
+
+.menuButton:hover {
+  background-color: #8fa0b4;
+}
+
+
+
+#choicesUser {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.settingSection {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.choice{
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+
+.settingMapButton {
+  background-color: #4c7aafd6;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.settingMapButton:hover {
+  background-color: #3a5c84;
+}
+
+.active{
+  background-color: #3a5c84;
+}
+
+#buttonGo {
+  margin-top: 30px;
+  background-color: #4c7aafd6;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #3a846f;
+}
+
+#buttonGo:hover {
+  background-color: rgb(39, 78, 77);
+}
+
+.titleSection {
+  background-color: #ffffffef;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: Calibri, sans-serif;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#renderCanvas {
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+
+#fps {
+  position: absolute;
+  background-color: rgb(82, 151, 230);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 2px;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  top: 15px;
+  right: 10px;
+  width: 60px;
+  height: 20px;
+}
+
+#timeContainer {
+  display: none;
+  position: absolute;
+  background-color: rgb(82, 151, 230);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  padding: 1px;
+  text-align: center;
+  font-size: 16px;
+  color: rgb(255, 250, 250);
+  top: 15px;
+  left: 10px;
+  width: 100px;
+  height: 40px;
+}
+
+#loader {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #017BAD;
+  z-index: 1000;
+
+  p {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+}
+
+#countDownContainer {
+  display: none;
+  position: absolute;
+  font-size: 10vw;
+  color: #ffffff;
+  text-align: center;
+  left: 50%; /* Centrage horizontal - démarrer à 50% de la largeur de l'écran */
+  top: 50%; /* Centrage vertical - démarrer à 50% de la hauteur de l'écran */
+  transform: translate(-50%, -50%); /* Décaler de -50% de sa propre largeur et hauteur pour centrer exactement */
+  border-radius: 20px;
+  background-color: #4c7aafd6;
+  border-radius: 10px;
+  padding: 15px;
+  min-width: 400px;
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  
+}
+
+#messageContainer {
+  display: none;
+  position: absolute;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  left: 50%; /* Centrage horizontal - démarrer à 50% de la largeur de l'écran */
+  bottom: 10%; /* Centrage vertical - démarrer à 50% de la hauteur de l'écran */
+  transform: translate(-50%, -50%); /* Décaler de -50% de sa propre largeur et hauteur pour centrer exactement */
+  border-radius: 20px;
+  background-color: #4c7aafd6;
+  border-radius: 10px;
+  padding: 15px;
+  min-width: 400px;
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0.5;
+    bottom: 7%;
+  }
+  50% {
+    opacity: 1;
+    bottom: 10%;
+  }
+  100% {
+    opacity: 0.5;
+    bottom: 7%;
+  }
+}
+
+#messageContainer {
+  /* existing styles */
+  animation: fadeInOut 3s infinite;
+}
+
+
+#logo {
+  width: 300px;
+  height: 300px;
+  margin-top: -20px;
+}
+
+#playerinfo{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #166154d6;
+  z-index: 99999 !important;
+  #chronoInfo{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    font-family: Calibri, sans-serif;
+    letter-spacing: 2px;
+  
+  }
+}
