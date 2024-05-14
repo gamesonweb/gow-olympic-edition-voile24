@@ -11,7 +11,7 @@ Pour initialiser le jeu vous devez :
 npm install
 npm start
 
-Lien pour jouer au jeu : https://goldenbrask.github.io/Voile24/
+Lien pour jouer au jeu : http://voile24.com/
 
 Lien vidéo gameplay : https://www.youtube.com/watch?v=ct-R8Fw1im4
 
